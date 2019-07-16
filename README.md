@@ -25,7 +25,7 @@ With tapered.yaml style looks like:
 
 With tapered.yaml style  and LR direction looks like:
 
-![](sample/sample.tapered.LR.svg)
+![LR](sample/sample.tapered.LR.svg)
 
 You can convert svg file to other formation with command:
 
