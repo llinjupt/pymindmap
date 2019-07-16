@@ -20,3 +20,5 @@ The sample output svg like below:
 You can convert svg file to other formation with command:
 
 `$ convert  -colorspace RGB -density 200 -quality 50 sample.yaml.svg sample.jpg`
+
+If you want to output Chinese characters or more beautiful mind map, maybe you need to install new fonts, with linux just put them into /usr/share/fonts/.
