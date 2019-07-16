@@ -13,7 +13,7 @@ Yaml files are used to configure graph style and mind source file:
 
 Pymindmap is focused on create mindmap automatically with same style defined in styles/style.yaml.
 
-The sample output svg like below:
+The sample output svg looks like below:
 
 ![An amazing tree](sample/sample.yaml.svg)
 
