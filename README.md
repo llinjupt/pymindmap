@@ -11,7 +11,7 @@ Yaml files are used to configure graph style and mind source file:
 - styles/style.yaml is used to configure dot graph. You can changed it to fix your own mind map.
 - sample/sample.yaml is a source file example.
 
-Pymindmap is focused on create mindmap automatically with same style defined in styles/style.yaml.
+Pymindmap focuses on creating mindmap automatically with same style defined in styles/xxx.yaml.
 
 The sample output svg looks like below:
 
