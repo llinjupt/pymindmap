@@ -143,7 +143,7 @@ def create_node_edge(G, parent, label, level=0):
     if xlabel == '':
       G.add_edge(realp, lab, samehead="h1", sametail="t1")
     else:
-      G.add_edge(realp, lab, xlabel=xlabel, samehead="h1", sametail="t1")        
+      G.add_edge(realp, lab, taillabel=xlabel, samehead="h1", sametail="t1")        
   G.add_node(lab)
 
 def create_dict_node(G, parent, dic, level=0):
@@ -181,7 +181,7 @@ def create_graph(G, yamlfile):
   if dic is not None:
     create_dict_node(G, None, dic, 0)
 
-def create_dot_file(yamlfile, style='styles/tapered.yaml'):
+def create_dot_file(yamlfile, style='styles/tapered.yaml', outfile='sample.dot'):
   # directed means draw a directed graph with arrow edges
   G = pgv.AGraph(name="Sample", directed=True)
   
@@ -193,13 +193,13 @@ def create_dot_file(yamlfile, style='styles/tapered.yaml'):
   
   # create dot file
   G.layout(prog='dot')
-  G.draw(path = yamlfile + ".dot", format="dot")
+  G.draw(path = outfile, format="dot")
   
   return G
 
-def create_svg_file(yamlfile, style='styles/tapered.yaml'):
+def create_svg_file(yamlfile, style='styles/tapered.yaml', outfile='sample.svg'):
   G = create_dot_file(yamlfile, style=style)
-  G.draw(path = yamlfile + ".svg", format="svg")
+  G.draw(path = outfile, format="svg")
   return G
 
 create_dot_file("sample/sample.yaml")

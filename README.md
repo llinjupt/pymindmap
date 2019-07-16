@@ -23,6 +23,10 @@ With tapered.yaml style looks like:
 
 ![tapered](sample/sample.yaml.tapered.svg)
 
+With tapered.yaml style  and LR direction looks like:
+
+![](sample\sample.tapered.LR.svg)
+
 You can convert svg file to other formation with command:
 
 `$ convert  -colorspace RGB -density 200 -quality 50 sample.yaml.svg sample.jpg`
