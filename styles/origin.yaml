@@ -1,0 +1,55 @@
+# refer to https://www.graphviz.org/doc/info/
+# note `-name: value` must have a space follow the ':'
+
+# refer to https://www.graphviz.org/doc/info/attrs.html
+graph:
+  # generally no need to set graph size and ratio
+  #- size: 4,4
+  #- ratio: 0.5 # or 'fill' and 'compress'
+  
+  # graph dot encode
+  - encoding: utf-8
+  
+  # output picture in the center of the graph
+  - center: True
+  
+  # nodes can't be overlapped 
+  - overlap: False
+  
+  # enable concentrate
+  - concentrate:  True
+  - rank: sink
+  
+  # graphic direction: BT,TB,LR,RL
+  - rankdir: BT
+
+  # draw order
+  - outputorder: edgesfirst
+  
+  # edge line style: curved,polyline,ortho,spline,none...
+  - splines: curved
+  
+  # node min separation (inches)
+  - nodesep: 0.1
+  
+  # rank min separation (inches)
+  - ranksep: 0.6
+  
+node:
+  # node shape: refer to https://www.graphviz.org/doc/info/shapes.html
+  - shape: rect
+  
+  # rounded? filled? node edge line width
+  - style: rounded,filled,setlinewidth(0.5)
+  
+  # node size
+  - fixedsize: false
+  
+  ## minor width and height size
+  - width: 0.5    
+  - height: 0.1
+  
+  # node font 
+  - fontname: Regular
+  - fontsize: 13
+

@@ -42,7 +42,7 @@ def load_yaml(file):
   
   return None
 
-def set_graph_attr(G, style='styles/style.yaml'):
+def set_graph_attr(G, style='styles/tapered.yaml'):
   style = load_yaml(style)
   
   if style is None:
@@ -181,7 +181,7 @@ def create_graph(G, yamlfile):
   if dic is not None:
     create_dict_node(G, None, dic, 0)
 
-def create_dot_file(yamlfile, style='styles/style.yaml'):
+def create_dot_file(yamlfile, style='styles/tapered.yaml'):
   # directed means draw a directed graph with arrow edges
   G = pgv.AGraph(name="Sample", directed=True)
   
@@ -197,7 +197,7 @@ def create_dot_file(yamlfile, style='styles/style.yaml'):
   
   return G
 
-def create_svg_file(yamlfile, style='styles/style.yaml'):
+def create_svg_file(yamlfile, style='styles/tapered.yaml'):
   G = create_dot_file(yamlfile, style=style)
   G.draw(path = yamlfile + ".svg", format="svg")
   return G

@@ -15,9 +15,13 @@ Pymindmap is focused on create mindmap automatically with same style defined in 
 
 The sample output svg looks like below:
 
-![An amazing tree](sample/sample.yaml.svg)
+![An amazing tree](sample/sample.yaml.origin.svg)
 
 
+
+With tapered.yaml style looks like:
+
+![tapered](sample\sample.yaml.tapered.svg)
 
 You can convert svg file to other formation with command:
 
