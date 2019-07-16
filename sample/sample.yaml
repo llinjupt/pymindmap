@@ -1,0 +1,11 @@
+root:
+  - trunk:
+    - grow -> one branch:
+      - a caterpillar
+      - a nest:
+        - birds:
+          - singing -> chirp
+      - sour apples
+    - graft -> another branch:
+      - a snake
+      - sweet apples\ngreen apple\nred apple\n
